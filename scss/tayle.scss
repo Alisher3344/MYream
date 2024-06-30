@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+.contayner{
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+$Midnight-Green:rgb(1, 78, 86);
+$Light-Coral: rgb(246, 126, 126);
+$White:rgb(255, 255, 255);
+$Rapture-Blue:rgb(121, 200, 199);
+$Police-Blue:rgb(44, 98, 105);
+$Deep-Jungle-Green:rgb(0, 64, 71);
+$Sacramento-State-Green:rgb(1, 47, 52);
+$Dark-Green:rgb(0, 37, 41);
+
+nav{
+  padding-top: 20px;
+background-color: $Midnight-Green ;
+position: sticky;
+top: 0px;
+
+.nav-bar-flax{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav-bar-flax2{
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+ul{
+  display: flex;
+  gap: 40px;
+   @media(max-width:606px){
+    display: none;
+  }
+}
+a{
+  text-decoration: none;
+  color:$White ;
+  transition: 0.3s;
+}
+a:hover{
+color: $Light-Coral; 
+}
+li{
+  list-style: none;
+}
+.nav-bar-flax3{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+   @media(max-width:606px){
+    display:none;
+  }
+}
+button{
+  font-family: Livvic;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+padding: 9px 33px 11px 32px;
+background: none;
+border-radius: 25px;
+border: 2px solid #FFFFFF
+}
+.burger-menu{
+  display: none ;
+ 
+  @media(max-width:606px){
+    display: block;
+  }
+}
+}
+.mini-menu{
+  display: none ;
+  position: absolute;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  background-color:$Midnight-Green ;
+  @media(max-width:606px){
+   display: block;
+  }
+  .nav-bar-flax4{
+    padding: 10px;
+    transition: 1s;
+    width: 0px;
+    height: 100%px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close{
+    width: 255px; 
+  }
+.sun{
+  display: none !important  ;
+}
+.icon-void{
+  display: none;
+}
+.close .sun{
+  display: block;
+}
+.close.icon-void{
+  display: block;
+}
+}
