@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="./css/tayle.min.css  ">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!--Livvic -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,7 +80,8 @@
 </div>
 <div class="shelf-2">
   <div class="contayner">
-<div class="shelf3">
+<div class="shelf3" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
   <div>
     <img class="line-2" src="./img/line-2.svg" alt="No img?">
     <h1>Build & manage distributed teams like no one else.</h1>
@@ -102,11 +104,11 @@
 </div>
 <aside>
     <div class="contayner">
-  <p class="p1">Delivering real results for top</p>
-  <div class="flax-text">
+  <p class="p1"data-aos="fade-down">Delivering real results for top</p>
+  <div class="flax-text" data-aos="fade-down">
     <p class="p1">companies. Some of our</p>
   <p class="p2"> success stories.</p></div>
-  <div class="big-box">
+  <div class="big-box"data-aos="fade-down">
     <div class="box"><div class="box-img"><img src="./img/“.svg" alt="No img?"></div>
     <p class="text-1"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
   <p class="text-2">Kady Baker</p>
@@ -127,7 +129,7 @@
   </div>
 </div>
 </aside>
-<footer>
+<footer  data-aos="zoom-in">
   
     <div class="contayner">
       <div class="footer-div">
@@ -138,7 +140,9 @@
     </div>
 </footer>
 <div>
-  <div class="end-footter">
+  <div class="end-footter" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
     <div class="contayner">
       <div  class="foot-box">
       <div>
@@ -163,6 +167,7 @@
   </div>
 </div>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script src="./js/index.js"></script>
 </body>
 </html>

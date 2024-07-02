@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenuId.classList.toggle('active');
     });
 });
+  AOS.init();

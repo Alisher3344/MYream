@@ -21,6 +21,7 @@ nav {
   background-color: rgb(1, 78, 86);
   position: sticky;
   top: 0px;
+  z-index: 10;
 }
 nav .nav-bar-flax {
   display: flex;
@@ -89,8 +90,9 @@ nav .burger-menu {
 }
 
 .mini-menu {
+  position: fixed;
+  top: 50px;
   display: none;
-  display: block;
   position: absolute;
   top: 60px;
   right: 0;

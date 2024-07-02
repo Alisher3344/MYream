@@ -27,6 +27,7 @@ nav{
 background-color: $Midnight-Green ;
 position: sticky;
 top: 0px;
+z-index: 10;
 
 .nav-bar-flax{
   display: flex;
@@ -91,8 +92,9 @@ color: rgb(0, 0, 0);
 }
 }
 .mini-menu{
+  position: fixed;
+  top: 50px;
   display: none;
-  display: block;
   position: absolute;
   top: 60px;
   right: 0;
@@ -102,6 +104,7 @@ color: rgb(0, 0, 0);
   display: block; 
  }
   .nav-bar-flax4{
+
     padding: 10px;
     height: 100%;
     display: flex;
@@ -239,7 +242,6 @@ width: 280px;
   background-color: $Dark-Green;
 
   .shelf3{
-    
     padding:140px 0px;
     display: flex;
     justify-content: space-between;
