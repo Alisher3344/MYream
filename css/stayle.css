@@ -69,6 +69,7 @@ nav button {
   font-weight: 600;
   line-height: 28px;
   text-align: left;
+  color: rgb(255, 255, 255);
   padding: 9px 33px 11px 32px;
   background: none;
   border-radius: 25px;
@@ -138,18 +139,17 @@ nav .burger-menu {
   display: none;
   margin-top: 20px;
   margin-left: 25px;
-  transition: 0.4s;
+  transition: 1s;
   font-family: Livvic;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  color: red;
   text-align: left;
+  color: rgb(255, 255, 255);
   padding: 9px 33px 11px 32px;
   background: none;
   border-radius: 25px;
   border: 2px solid #FFFFFF;
-  color: red;
 }
 .mini-menu button:hover {
   background-color: #FFFFFF;
@@ -187,19 +187,20 @@ nav .burger-menu {
     font-weight: 700;
     line-height: 40px;
     text-align: center;
+    color: rgb(255, 255, 255);
   }
 }
 .shelf .box-shelf .book-2 {
-  color: rgb(246, 126, 126);
   font-family: Livvic;
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
   text-align: left;
+  color: rgb(246, 126, 126);
 }
 @media (max-width: 538px) {
   .shelf .box-shelf .book-2 {
-    font-family: Livvic;
+    @in font-family: Livvic;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;

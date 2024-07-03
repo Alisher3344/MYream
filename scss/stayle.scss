@@ -1,3 +1,4 @@
+@use "mixin" as mxn;
 *{
   margin: 0;
   padding: 0;
@@ -67,11 +68,7 @@ li{
   }
 }
 button{
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
+      @include mxn.font(Livvic, 18px, 600, 28px, left, $White);
 padding: 9px 33px 11px 32px;
 background: none;
 border-radius: 25px;
@@ -139,18 +136,12 @@ button{
   display: none;
   margin-top: 20px;
   margin-left: 25px;
-  transition: 0.4s;
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-color: red;
-text-align: left;
+  transition: 1s;
+   @include mxn.font(Livvic, 18px, 600, 28px, left, $White);
 padding: 9px 33px 11px 32px;
 background: none;
 border-radius: 25px;
 border: 2px solid #FFFFFF;
-color: red;
 }
 button:hover{
  background-color: #FFFFFF;
@@ -172,56 +163,27 @@ flex-direction: column;
 align-items: center;
   }
   .book-1{
-  font-family: Livvic;
-font-size: 100px;
-font-weight: 700;
-line-height: 100px;
-text-align: left;
-color: $White;
+     @include mxn.font(Livvic, 100px, 700, 100px, left, $White);
 @media(max-width:538px)
 {
-font-family: Livvic;
-font-size: 40px;
-font-weight: 700;
-line-height: 40px;
-text-align: center;
-
+     @include mxn.font(Livvic, 40px, 700, 40px, center, $White);
 }
   }
   .book-2{
-    color: $Light-Coral;
-    font-family: Livvic;
-font-size: 100px;
-font-weight: 700;
-line-height: 100px;
-text-align: left;
+    @include mxn.font (Livvic,100px,700,100px,left,$Light-Coral);
 @media(max-width:538px)
 {
-font-family: Livvic;
-font-size: 40px;
-font-weight: 700;
-line-height: 40px;
-text-align: center;
+  @include mxn.font (Livvic,40px,700,40px,center);
 
 }
 
   }
   .book-3{
     padding-top: 79px;
-    font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
-width:445px; 
-color: $White;
+    @include mxn.font (Livvic,600,28px,left,$White, 445px);
 @media(max-width:528px){
-font-family: Livvic;
-font-size: 15px;
-font-weight: 600;
-line-height: 28px;
-text-align: center;
-width: 280px;
+  @include mxn.font(Livvic,15px,600,28px,center,$White,280px);
+
 }
   }
 }
@@ -252,22 +214,11 @@ align-items: center;
   }
   h1{
     width:445px; 
-    font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 48px;
-text-align: left;
-color: $White;
+    @include mxn.font (Livvic,48px,700,48px,left,$White);
 @media(max-width:982px){
-  font-family: Livvic;
-font-size: 32px;
-font-weight: 700;
-line-height: 32px;
-text-align: left;
-padding-bottom: 64px;
+  @include mxn.font (Livvic,32px,700,32px,left,$White);
 @media(max-width:537px){
 width:240px; 
-
 }
 }
   }
@@ -281,12 +232,7 @@ padding-bottom: 30px;
     width: 72px;
   }
   .books1{
-    font-family: Livvic;
-font-size: 18px;
-font-weight: 700;
-line-height: 28px;
-text-align: left;
-color: $Light-Coral;
+    @include mxn.font(Livvic,18px,700,28px,left,$Light-Coral);
  @media(max-width:541px){
 
 text-align: center;
@@ -294,14 +240,7 @@ text-align: center;
   }
   .books2{
     padding-top: 10px;
-    width: 445px;
-
-    font-family: Livvic;
-font-size: 15px;
-font-weight: 600;
-line-height: 25px;
-text-align: left;
-color: $White;
+ @include mxn.font(Livvic,15px,600,25px,left,$White,445px);
  @media(max-width:541px){
 text-align: center;
 width: 260px;
@@ -332,29 +271,13 @@ margin:  0 auto;
       }
     }
  .p1{
-font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 48px;
-text-align: center;
-color: $White;
+@include mxn.font(Livvic,48px,700,48px,center,$White);
  }
  .p2{
-font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 48px;
-text-align: center;
-color: $Rapture-Blue;
+ @include mxn.font(Livvic,48px,700,48px,center,$Rapture-Blue);
  }
  .text-1{
-  font-family: Livvic;
-font-size: 15px;
-font-weight: 600;
-line-height: 25px;
-text-align: center;
-width:350px; 
-color: $White;
+  @include mxn.font(Livvic,15px,600,25px,center,$White,350px);
  @media(max-width:1078px){
 margin: 0 auto;
   }
@@ -365,12 +288,7 @@ width: 280px;
  .text-2{
   padding-top: 24px;
   padding-bottom: 2px;
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-color: $Rapture-Blue;
+  @include mxn.font (Livvic,18px,700,28px,center,$Rapture-Blue);
  }
  .big-box{
   padding-top: 56px;
@@ -386,11 +304,7 @@ justify-content: center;
  }
  .text-3{
   padding-bottom: 32px;
-  font-family: Livvic;
-font-size: 13px;
-line-height: 18px;
-text-align: center;
-color: $White;
+  @include mxn.font(Livvic,13px,18px,center,$White);
  }
  @media(max-width:1019px){
   .box{
@@ -410,18 +324,9 @@ color: $White;
     text-align: center;
       }
       h1{
-
-        width: 504px;
-
-font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 50px;
-color: $Dark-Green;
+@include mxn.font (Livvic,48px,700,50px,left,$Dark-Green,504px);
 @media(max-width:988px){
-  margin:  0 
-  auto;
-  
+  margin: 0 auto ;
 }
 @media(max-width:540px){
 width: auto;
@@ -435,13 +340,7 @@ text-align: center;
         border: 2px solid #012F34;
         background: none;
         a{
-          font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
-color:#012F34; 
-text-decoration: none;
+          @include mxn.font(Livvic,18px,600,28px,left,#012F34);
         }
         
       }
@@ -475,12 +374,7 @@ a{
   transition: 0.3s;
 }
 .foot{
- font-family: Livvic;
-font-size: 15px;
-font-weight: 600;
-line-height: 25px;
-text-align: left;
-color: $White;
+  @include mxn.font(Livvic,15px,600,25px,left,$White);
 opacity: 60%;
 }
 .foot-box{
@@ -518,21 +412,10 @@ justify-content: space-between;
 }
 }
 .about-p1{
-  font-family: Livvic;
-font-size: 64px;
-font-weight: 700;
-line-height: 100px;
-text-align: left;
-color: $White;
+  @include mxn.font (Livvic,64px,700,100px,left,$White);
 }
 .about-p2{
-  padding-top: 44px;
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
-color: $White; 
+  @include mxn.font (Livvic,18px,600,28px,left,$White);
 max-width:730px; 
 @media(max-width:955px){
   padding-top: 10px;
@@ -544,12 +427,7 @@ max-width:730px;
   background-color: $Deep-Jungle-Green;
   .about-div-2-p{
     padding: 140px 0px 64px 0px;
-    font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 48px;
-text-align: center;
-color: $White;
+    @include mxn.font (Livvic,48px,700,48px,center,$White);
   }
   .about-div-2{
     padding-bottom: 140px;
@@ -574,32 +452,18 @@ color: $White;
      }
     }
  .user-text{
+  @include mxn.font(Livvic,18px,700,28px,center,$Rapture-Blue);
   padding-top: 13px;
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 700;
-line-height: 28px;
-text-align: center;
-color: $Rapture-Blue;
 } 
 .user-text-2{
+  @include mxn.font (Livvic,15px,25px,center,$White);
   font-family: Livvic;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
-color: $White;
 }
 .user-text-3{
   padding-bottom: 20px;
   padding-top: 10px;
   margin: 0 auto;
-  font-family: Livvic;
-font-size: 15px;
-font-weight: 600;
-line-height: 25px;
-text-align: center;
-width: 254px;
-color:$White;
+  @include mxn.font (Livvic,15px,600,25px,center,$White,254px);
 }
 .img-pad{
   padding-top: 35px;
@@ -611,12 +475,7 @@ color:$White;
   background-color: $Dark-Green;
   h1{
     padding-top: 140px;
-    font-family: Livvic;
-font-size: 48px;
-font-weight: 700;
-line-height: 48px;
-text-align: center;
-color: $White;
+    @include mxn.font (Livvic,48px,700,48px,center,$White);
   }
 .asbout-logos{
   padding-top: 64px;
@@ -664,35 +523,19 @@ background-color: $Midnight-Green;
 flex-direction: column;
   }
   h1{
-   
-    font-family: Livvic;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 100px;
-  text-align: left;
-  color: $White;
+   @include mxn.font(Livvic,64px,700,100px,left,$White);
   }
   h2{
   padding-top: 16px;
   padding-bottom: 32px;
-  font-family: Livvic;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
-  color: $Light-Coral;
+  @include mxn.font (Livvic,32px,700,48px,left,$Light-Coral);
   }
   .contact-size{
     width: 72px;
   }
   .contact-div-1{
   p{
-    font-family: Livvic;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  color: $White;
+    @include mxn.font (Livvic,18px,700,28px,left,$White);
   }
   .img-p-flax{
     display: flex;
@@ -734,11 +577,7 @@ border: none;
  border: 2px solid #FFFFFF;
  background-color: $White;
  p{
-  font-family: Livvic;
-font-size: 18px;
-font-weight: 600;
-line-height: 28px;
-text-align: left;
+  @include mxn.font(Livvic,18px,600,28px,left);
  } }
  button:hover{
   
